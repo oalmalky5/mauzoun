@@ -29,6 +29,13 @@ export default function Menu({ backgroundColor, textAnimationControls, isNavOpen
   }, []);
 
   React.useEffect(() => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari){
+      gsap.fromTo('.navigation', {opacity: 0}, {opacity: 1, delay: 0.3})
+    }
+  }, [])
+
+  React.useEffect(() => {
     const localeCopy = locales[otherLocale];
     setOtherIntl(
       createIntl(

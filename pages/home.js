@@ -90,7 +90,7 @@ export default function Home({ updatePageTransition, textAnimationControls, hand
                   height='400px'
                   layout='fixed'
                   priority='true'
-                  src='mainOffice.png'
+                  src='/mainOffice.png'
                   alt='an image of an office'
                   transition={{ duration: 0.5 }}
                 />

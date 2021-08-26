@@ -86,7 +86,7 @@ export default function LandingPage({ updatePageTransition, textAnimationControl
     );
   };
 
-  const handleMovePage = React.useCallback((click) => {
+  const handleMovePage = (click) => {
     gsap.to(".background", {
       duration: 0.75,
       width: "100%",
@@ -147,7 +147,7 @@ export default function LandingPage({ updatePageTransition, textAnimationControl
         },
       });
     } 
-  }, [width]);
+  };
 
   return (
     <>

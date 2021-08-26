@@ -81,7 +81,6 @@ export default function blog({ textAnimationControls, handleBgColorChange,handle
               <div className="container-content">
                 <ComingSoon />
               </div>
-                <ContactButton />
             </div>
           </div>
         </div>
